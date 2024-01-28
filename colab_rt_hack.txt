@@ -1,0 +1,29 @@
+Google Colab (Pro) - runtime upkeep hack
+
+Open Chrome browser, press Strg+Shift+I, change to tab "Console".
+  
+Paste the following string: 
+
+"allow pasting" 
+
+Paste the following JavaScript Code: 
+  
+function ClickConnect() {
+    console.log("Clicking for Google Colab (Pro) ...");
+    document.querySelector("colab-connect-button").click();
+}
+
+function getRandomWaitTime() {
+    // Generate a random time - between 60 and 85 minutes in milliseconds
+    const minWait = 60 * 1000; // 60 minutes in milliseconds
+    const maxWait = 85 * 60 * 1000; // 85 minutes in milliseconds
+    return Math.floor(Math.random() * (maxWait - minWait + 1)) + minWait;
+}
+
+setInterval(function() {
+    ClickConnect();
+}, getRandomWaitTime());
+
+Under user messages <other> "Clicking for Golab (Pro) ..." should appear every 60 - 85 minutes.
+
+To stop the JavaScript Code execution reload the Chrome browser Colab (Pro) tab.
