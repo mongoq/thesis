@@ -1,7 +1,8 @@
 Google Colab (Pro) - runtime upkeep hack
 
 Open Chrome browser, press Strg+Shift+I, change to tab "Console".
-  
+Click on the "eye" icon.
+
 Paste the following string: 
 
 "allow pasting" 
@@ -27,3 +28,5 @@ setInterval(function() {
 Under user messages <other> "Clicking for Golab (Pro) ..." should appear every 60 - 85 minutes.
 
 To stop the JavaScript Code execution reload the Chrome browser Colab (Pro) tab.
+
+TODO: The "allow pasting" setting seems to be permanent and cannot be disabled!?!
