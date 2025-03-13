@@ -1,2 +1,2 @@
-# thesis
-Google Colab Tryouts
+# Master thesis
+Google Colab Pro experiments
